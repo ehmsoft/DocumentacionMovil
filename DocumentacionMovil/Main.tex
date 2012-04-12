@@ -1,0 +1,66 @@
+\documentclass[letter,11pt,oneside,pdftex]{book}
+
+\usepackage{verbatim}
+\usepackage[spanish]{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+\usepackage{float}
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[pdftex]{graphicx}
+\DeclareGraphicsExtensions{.pdf,.png,.jpg}
+
+\newcommand{\ehmsof}{ehmSoft}
+\newcommand{\softwareAbogadosMobile}{Procesos judiciales versi\'on m\'ovil~}
+\newcommand{\blackberryos}[1]{BlackBerry\textsuperscript{\textregistered}~#1}
+\newcommand{\blackberry}{BlackBerry\textsuperscript{\textregistered}~}
+\newcommand{\insertImage}[3]{
+\begin{figure}[H]
+\begin{center}
+\includegraphics[scale=0.4]{./CapturasDePantalla/#1.png}
+\caption{#2}\label{fig:#3}
+\end{center}
+\end{figure}
+}
+\newcommand{\guardarVer}{Si al completar la edici\'on desea conservar los
+cambios: lance el men\'u
+\blackberry y seleccione guardar, de lo contrario presione la tecla
+\emph{Escape} de su dispositivo.}
+
+\usepackage[pdftex,colorlinks]{hyperref}
+\hypersetup{linkcolor=black}
+
+\title{}
+\author{}
+\date{}
+
+\pdfinfo{%
+  /Title    ()
+  /Author   ()
+  /Creator  ()
+  /Producer ()
+  /Subject  ()
+  /Keywords ()
+}
+
+\begin{document}
+%\maketitle
+%\tableofcontents
+\thispagestyle{empty}
+\begin{figure}[c]
+\begin{center}
+\includegraphics[scale=0.3]{./CapturasDePantalla/logomanual.png}
+\end{center}
+\end{figure}
+\frontmatter
+\input{licencia}
+\input{intro}
+\tableofcontents
+\mainmatter
+\input{primerosPasos}
+\input{creandoLaInformacion}
+\input{consultandoLaInformacion}
+\input{preferencias}
+
+\end{document}
